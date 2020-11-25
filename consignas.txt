@@ -1,0 +1,62 @@
+Actividad 2 - Clase 8
+Empezar a trabajar con un repositorio propio
+Usando como codebase el material de la Clase 3:
+
+https://iupa.edu.ar/campus/mod/folder/view.php?id=20559
+
+Y lo aprendido en clase acerca del uso de la línea de comandos y el VCS "Git", 
+crearemos un proyecto bajo control de versiones. Para ello, la consigna es 
+desarrollar en orden los siguientes ítems:
+
+	
+	En el directorio donde se encuentra el proyecto, inicializar un 
+	repositorio Git.
+INICIADO NEW FOLDER " HDES-TP2 "
+
+
+	Hacer el primer commit en la rama principal (puede ser "master" o 
+	"main"), agregando en él todos los archivos del proyecto. El mensaje 
+	del commit debe ser "Commit inicial".
+
+
+
+	Crear una cuenta y un repositorio vacío en Github (https://github.com/). 
+	Establecer la visibilidad del repositorio como "público".
+
+
+
+	En la versión local del repositorio, establecer como "remote" al 
+	repositorio recientemente creado en Github. 
+	Tip: el comando "git remote add" es de utilidad.
+
+
+
+
+	"Pushear" al remoto la rama principal, que contiene el commit hecho 
+	anteriormente.
+
+
+
+
+	En el repositorio local, crear una nueva rama, nombrarla a gusto y 
+	posicionarse en ella.
+
+
+
+	Modificar el archivo README.md, cambiando su contenido por 
+	instrucciones para clonar este repositorio desde github. (Utilizar 
+	markdown para el formato del texto. 
+	Modificar además alguno de los otros archivos. 
+	Hacer un nuevo commit en la nueva rama, con un mensaje que describa 
+	los cambios realizados.
+
+
+
+	"Pushear" la nueva rama al remoto. Utilizando la interfaz de Github, 
+	crear un pull request desde la rama "pusheada", hacia la rama 
+	principal.
+
+
+
+	Como entregable, proveer en esta misma actividad la URL del 
+	repositorio.
