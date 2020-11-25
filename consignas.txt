@@ -11,36 +11,101 @@ desarrollar en orden los siguientes ítems:
 	
 	En el directorio donde se encuentra el proyecto, inicializar un 
 	repositorio Git.
-INICIADO NEW FOLDER " HDES-TP2 "
+INICIADO EN " HDES-TP2 "
 
 
 	Hacer el primer commit en la rama principal (puede ser "master" o 
 	"main"), agregando en él todos los archivos del proyecto. El mensaje 
 	del commit debe ser "Commit inicial".
+REALIZADO
+dcelle@DCelle-Studio-1555:~/HDES-TP2$ git add .
+dcelle@DCelle-Studio-1555:~/HDES-TP2$ git status
+En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+	nuevo archivo:  consignas.txt
+	nuevo archivo:  estilos.css
+	nuevo archivo:  foo.bar
+	nuevo archivo:  index.html
+	nuevo archivo:  jebus.gif
+	nuevo archivo:  otra-pagina.html
+	nuevo archivo:  scripts.js
+
+dcelle@DCelle-Studio-1555:~/HDES-TP2$ git commit -m "Commit inicial"
+[master (commit-raíz) fcc009b] Commit inicial
+ 7 files changed, 118 insertions(+)
+ create mode 100644 consignas.txt
+ create mode 100644 estilos.css
+ create mode 100644 foo.bar
+ create mode 100644 index.html
+ create mode 100644 jebus.gif
+ create mode 100644 otra-pagina.html
+ create mode 100644 scripts.js
+dcelle@DCelle-Studio-1555:~/HDES-TP2$ 
 
 
 
 	Crear una cuenta y un repositorio vacío en Github (https://github.com/). 
 	Establecer la visibilidad del repositorio como "público".
-
+CREADA
+https://github.com/dcelle/HerramientasDesarrollo.git
 
 
 	En la versión local del repositorio, establecer como "remote" al 
 	repositorio recientemente creado en Github. 
 	Tip: el comando "git remote add" es de utilidad.
-
+ESTABLECIDA
+git remote add origin https://github.com/dcelle/HerramientasDesarrollo.git
+dcelle@DCelle-Studio-1555:~/HDES-TP2$ git remote -v
+origin	https://github.com/dcelle/HerramientasDesarrollo.git (fetch)
+origin	https://github.com/dcelle/HerramientasDesarrollo.git (push)
 
 
 
 	"Pushear" al remoto la rama principal, que contiene el commit hecho 
 	anteriormente.
+SUBIDO
+celle@DCelle-Studio-1555:~/HDES-TP2$ git log
+commit fcc009b86c0f37217513e91d040d70d4b7ecaeb2 (HEAD -> master)
+Author: dcelle <dcelle@hnpatagonia.com.ar>
+Date:   Wed Nov 25 12:11:02 2020 -0300
+
+    Commit inicial
+dcelle@DCelle-Studio-1555:~/HDES-TP2$ git remote show origin
+* remoto origin
+  URL  para obtener: https://github.com/dcelle/HerramientasDesarrollo.git
+  URL para publicar: https://github.com/dcelle/HerramientasDesarrollo.git
+  Rama HEAD: main
+  Rama remota:
+    main nuevo (siguiente fetch se guardará en remotes/origin)
+
+dcelle@DCelle-Studio-1555:~/HDES-TP2$ git push --set-upstream origin master
+Username for 'https://github.com': dcelle@hnpatagonia.com.ar
+Password for 'https://dcelle@hnpatagonia.com.ar@github.com': 
+Enumerando objetos: 9, listo.
+Contando objetos: 100% (9/9), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (9/9), listo.
+Escribiendo objetos: 100% (9/9), 942.00 KiB | 10.24 MiB/s, listo.
+Total 9 (delta 1), reusado 0 (delta 0), pack-reusado 0
+remote: Resolving deltas: 100% (1/1), done.
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/dcelle/HerramientasDesarrollo/pull/new/master
+remote: 
+To https://github.com/dcelle/HerramientasDesarrollo.git
+ * [new branch]      master -> master
+Rama 'master' configurada para hacer seguimiento a la rama remota 'master' de 'origin'.
 
 
 
 
 	En el repositorio local, crear una nueva rama, nombrarla a gusto y 
 	posicionarse en ella.
-
+ANTES DE LA ACCION SE GENERARÁ UN NUEVO COMMIT CON LO REALIZADO 
 
 
 	Modificar el archivo README.md, cambiando su contenido por 
